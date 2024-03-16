@@ -71,7 +71,7 @@ def generate_password(length, include_symbols, include_digits):
     symbols_list = [ '@', '#', '$', '&'] * 2 # *2 to increase the chance to choose random symbol
 
     if include_digits == "yes":
-        lists = string.ascii_uppercase + string.digits + string.ascii_lowercase
+        lists = string.ascii_uppercase + string.digits * 2 + string.ascii_lowercase
     else:
         lists = string.ascii_uppercase + string.ascii_lowercase
 
