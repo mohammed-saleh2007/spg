@@ -68,7 +68,7 @@ def collect_data():
 
 
 def generate_password(length, include_symbols, include_digits):
-    symbols_list = ['!', '@', '#', '$', '%', '^', '&', '*']
+    symbols_list = [ '@', '#', '$', '&']
 
     if include_digits == "yes":
         lists = string.ascii_uppercase + string.digits + string.ascii_lowercase
