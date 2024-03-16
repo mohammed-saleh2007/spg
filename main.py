@@ -68,7 +68,7 @@ def collect_data():
 
 
 def generate_password(length, include_symbols, include_digits):
-    symbols_list = [ '@', '#', '$', '&'] * 2 # *2 to increase the chance to choose random symbol
+    symbols_list = [ '@', '#', '$', '&'] * 3 # *2 to increase the chance to choose random symbol
 
     if include_digits == "yes":
         lists = string.ascii_uppercase + string.digits * 2 + string.ascii_lowercase
